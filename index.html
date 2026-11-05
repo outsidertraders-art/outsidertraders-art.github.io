@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Achadinhos da Casa</title>
+<style>
+  :root { --fundo:#fff8f1; --cartao:#fff; --texto:#3e2723; --suave:#8d6e63; --destaque:#e53935; }
+  @media (prefers-color-scheme: dark) { :root { --fundo:#1b1512; --cartao:#2a211c; --texto:#f5e6d3; --suave:#bcaaa4; } }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--fundo); color:var(--texto); }
+  header { position:sticky; top:0; background:var(--fundo); padding:16px; border-bottom:1px solid #0001; z-index:1; }
+  h1 { margin:0 0 4px; font-size:22px; }
+  p { margin:0 0 12px; color:var(--suave); font-size:14px; }
+  input { width:100%; font-size:18px; padding:12px 14px; border-radius:12px; border:2px solid var(--destaque); background:var(--cartao); color:var(--texto); }
+  main { display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:12px; padding:16px; max-width:900px; margin:0 auto; }
+  .item { display:flex; flex-direction:column; gap:6px; background:var(--cartao); border-radius:14px; padding:10px; text-decoration:none; color:inherit; position:relative; box-shadow:0 1px 4px #0002; }
+  .item.alvo { outline:3px solid var(--destaque); }
+  .num { position:absolute; top:8px; left:8px; background:var(--destaque); color:#fff; font-weight:700; font-size:13px; padding:3px 8px; border-radius:8px; }
+  img, .semimg { width:100%; aspect-ratio:1; object-fit:cover; border-radius:10px; background:#f5e6d3; }
+  .nome { font-size:14px; line-height:1.3; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .preco { font-weight:700; }
+  .botao { margin-top:auto; text-align:center; background:var(--destaque); color:#fff; border-radius:10px; padding:9px; font-weight:600; }
+  footer { text-align:center; font-size:12px; color:var(--suave); padding:24px 16px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Achadinhos da Casa</h1>
+  <p>Viu um achadinho no vídeo? Digite o número dele.</p>
+  <input id="busca" type="search" inputmode="numeric" placeholder="Número do achadinho (ex: 47)">
+</header>
+<main id="lista">
+    <a class="item" id="n13" data-n="13" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1727132712%2F50967965731&amp;affiliate_id=18350680347&amp;sub_id=n13" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 13</span>
+      <img src="https://cf.shopee.com.br/file/sg-11134201-8257z-mt7zoh6gqrygd7" alt="" loading="lazy">
+      <span class="nome">Garrafa Térmica 800ml Aço Inox Mantém Quente e Frio Livre de BPA Cruz São Bento Floral Azul e Branca em Estilo Vintage</span>
+      <span class="preco">a partir de R$ 65,90</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+    <a class="item" id="n11" data-n="11" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F218201282%2F58219196050&amp;affiliate_id=18350680347&amp;sub_id=n11" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 11</span>
+      <img src="https://cf.shopee.com.br/file/br-11134207-820mb-mu6f90tc9bsz67" alt="" loading="lazy">
+      <span class="nome">Potes de Vidro Natalinos 830ml | Presente de Natal - Pote de Biscoitos - Lembrancinhas de natal</span>
+      <span class="preco">a partir de R$ 24,90</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+    <a class="item" id="n10" data-n="10" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1578707850%2F58269554331&amp;affiliate_id=18350680347&amp;sub_id=n10" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 10</span>
+      <img src="https://cf.shopee.com.br/file/br-11134207-820li-mtsnnnk4re2oe8" alt="" loading="lazy">
+      <span class="nome">Arara de Roupas Expositor Ilha p/ Loja Closet Resistente Moderno Slin Desmontável Ferro</span>
+      <span class="preco">a partir de R$ 65,00</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+    <a class="item" id="n9" data-n="9" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1927680292%2F46067214461&amp;affiliate_id=18350680347&amp;sub_id=n9" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 9</span>
+      <img src="https://cf.shopee.com.br/file/cn-11134207-820l4-msqpc6j4nu2t87" alt="" loading="lazy">
+      <span class="nome">20/40/60pcs Guardanapos Impressos Descartáveis De 2 Camadas , Tema Floral De Lavagem De Tinta Azul . Perfeito Para Anive</span>
+      <span class="preco">a partir de R$ 41,60</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+    <a class="item" id="n8" data-n="8" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1235033849%2F53560501726&amp;affiliate_id=18350680347&amp;sub_id=n8" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 8</span>
+      <img src="https://cf.shopee.com.br/file/sg-11134201-822ze-mo8cqgrx924jfc" alt="" loading="lazy">
+      <span class="nome">Kit 6 Copos Plásticos 400ml com Suporte Organizador Reutilizáveis Resistentes Casa Cozinha Café Bar</span>
+      <span class="preco">a partir de R$ 24,90</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+    <a class="item" id="n7" data-n="7" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F578971273%2F58264635125&amp;affiliate_id=18350680347&amp;sub_id=n7" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 7</span>
+      <img src="https://cf.shopee.com.br/file/sg-11134201-82583-mqw4vnbdnawyc3" alt="" loading="lazy">
+      <span class="nome">Utensílios Cozinhas Silicone Conchas Escumadeiras Espátula Vasada e Colher Servir Resistente Não Risca Panelas</span>
+      <span class="preco">a partir de R$ 27,98</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+    <a class="item" id="n6" data-n="6" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1650500780%2F22094672619&amp;affiliate_id=18350680347&amp;sub_id=n6" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 6</span>
+      <img src="https://cf.shopee.com.br/file/sg-11134201-825bc-mt9mgweiavi9ef" alt="" loading="lazy">
+      <span class="nome">Kit 2 Limpa Vidros Jimo em Espuma – Brilho e Transparência Profissional na Limpeza de Vidros e Espelhos</span>
+      <span class="preco">a partir de R$ 41,99</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+    <a class="item" id="n4" data-n="4" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1658898435%2F22994763543&amp;affiliate_id=18350680347&amp;sub_id=n4" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 4</span>
+      <img src="https://cf.shopee.com.br/file/br-11134207-820lu-mrb34ydopxxg73" alt="" loading="lazy">
+      <span class="nome">Kit 3 Refil Cartucho PP Ranhurado 9 3/4 Filtro Caixa D’Água Cavalete Alta Filtragem 0,5–50 Microns</span>
+      <span class="preco">a partir de R$ 33,99</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+    <a class="item" id="n3" data-n="3" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F944725778%2F58215739263&amp;affiliate_id=18350680347&amp;sub_id=n3" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 3</span>
+      <img src="https://cf.shopee.com.br/file/sg-11134201-8259s-mrkmjbayjchs1e" alt="" loading="lazy">
+      <span class="nome">Kit 2 Formas Antiaderentes Teflon 12 Cavidades Para Cupcake Muffin Empadas Pão De Queijo</span>
+      <span class="preco">a partir de R$ 31,88</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+    <a class="item" id="n2" data-n="2" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F446419842%2F58204489277&amp;affiliate_id=18350680347&amp;sub_id=n2" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 2</span>
+      <img src="https://cf.shopee.com.br/file/sg-11134201-8260w-mk89eeplivb7d5" alt="" loading="lazy">
+      <span class="nome">Espátula Reta Tubular Inox Multiuso | Cortador e Raspador para Massas, Bolo, Legumes e Cozinha</span>
+      <span class="preco">a partir de R$ 27,90</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+    <a class="item" id="n1" data-n="1" href="https://shope.ee/an_redir?origin_link=https%3A%2F%2Fshopee.com.br%2Fproduct%2F1733122072%2F58204905038&amp;affiliate_id=18350680347&amp;sub_id=n1" target="_blank" rel="noopener sponsored">
+      <span class="num">Nº 1</span>
+      <img src="https://cf.shopee.com.br/file/br-11134207-820lk-ms34l8ibw1s76a" alt="" loading="lazy">
+      <span class="nome">Kit Caneca Safari Animais Bichinhos Lembrancinha Festa Infantil Aniversário Decoração Presente 450 ml</span>
+      <span class="preco">a partir de R$ 26,65</span>
+      <span class="botao">Ver na Shopee</span>
+    </a>
+</main>
+<footer>Links de afiliado: posso ganhar comissão pelas compras, sem custo extra para você. Preços podem mudar na loja.<br><a href="termos.html">Termos de uso</a> · <a href="privacidade.html">Privacidade</a></footer>
+<script>
+  const busca = document.getElementById('busca');
+  const itens = [...document.querySelectorAll('.item')];
+  function filtrar() {
+    const n = busca.value.replace(/\D/g, '');
+    itens.forEach((el) => { el.hidden = n && !el.dataset.n.startsWith(n); el.classList.toggle('alvo', n && el.dataset.n === n); });
+  }
+  busca.addEventListener('input', filtrar);
+  const hash = location.hash.replace('#n', '');
+  if (hash) { busca.value = hash; filtrar(); }
+</script>
+</body>
+</html>
